@@ -1,0 +1,136 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #cb6ce5;
+}
+
+.company-info {
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px !important;
+  .company-name {
+    border-radius: 10px;
+    background-color: #cb6ce5;
+    color: #ffff;
+    margin-left: 26%;
+    margin-right: 26%;
+  }
+}
+.centered-border {
+  position: relative;
+  width: 50%;
+  margin: 0 auto;
+  padding-bottom: 20px; /* Adjust as needed */
+}
+
+.centered-border::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;
+  border-bottom: 2px dotted purple; /* Dotted border with purple color */
+}
+.our-team {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.team-heading {
+  background-color: #cb6ce5;
+  color: #ffffff;
+  padding: 13px;
+  margin: 18px 0;
+  text-align: center;
+  width: 24%;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 10px
+}
+
+.v-shape {
+  border-left: 10px solid transparent;
+  border-bottom: 10px solid #cb6ce5;
+  background-color: #cb6ce5;
+    color: #ffffff;
+    padding: 17px;
+    margin: -20px 0;
+    text-align: center;
+    width: 3.1%;
+    margin-left: 95%;
+}
+.v-shape-bottom {
+  border-left: 10px solid transparent;
+  border-bottom: 10px solid #cb6ce5;
+  background-color: #cb6ce5;
+    color: #ffffff;
+    padding: 17px;
+    margin: -20px 0;
+    text-align: center;
+    width: 3%;
+    margin-left: -1.7%;
+}
+
+.team-members-lead {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  .member {
+    width: 24%;
+    margin: 25px;
+    padding: 25px;
+    text-align: center;
+    position: relative;
+
+    .description{
+      color: #cb6ce5;
+    }
+   
+  }
+}
+.team-members-dev {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  .member {
+    width: 16%;
+    margin: 25px;
+    padding: 25px;
+    text-align: center;
+    position: relative;
+    .description{
+      color: #cb6ce5;
+    }
+  }
+}
+
+.member img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: translateX(-50%);
+}
+
+@media (max-width: 768px) {
+  .member {
+    width: 100%;
+  }
+}
